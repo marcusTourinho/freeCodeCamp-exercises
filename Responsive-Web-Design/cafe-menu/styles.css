@@ -1,0 +1,105 @@
+body {
+    background-image: url(beans.jpg);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.menu {
+    /*a width fará com que o menu sempre tenha 80% da largura do body*/
+    width: 80%;
+    /*a propriedade max-width impede que a largura máxima do menu ultrapasse 500px e fique mto espaçado em telas largas*/
+    max-width: 500px;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    /*você pode dar ao menu um espaço entre o conteúdo e seus lados*/
+    padding: 20px 20px 20px 20px;
+}
+
+img {
+    /*para centralizar uma imagem utilizamos as propriedades abaixo*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
+
+h1, h2 {
+    /*você pode adicionar uma fonte reserva caso a inicial não for suportada*/
+    font-family: Impact, serif;
+}
+
+.established {
+    font-style: italic;
+}
+
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+h2 {
+    font-size: 30px;
+}
+
+/*a regra abaixo seleciona todos os elementos p aninhados em qualquer lugar que possua a classe item*/
+.item p {
+    /*elementos inline-block ocupam apenas a largura de seu conteúdo*/
+    display: inline-block;
+    margin: 5px 0 5px 0;
+    font-size: 18px;
+}
+
+.flavor, .dessert {
+    text-align: left;
+    width: 75%;
+}
+
+.price {
+    text-align: right;
+    width: 25%;
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+/*FOOTER*/
+
+footer {
+    font-size: 14px;
+  }
+
+a {
+    color: black;
+}
+
+/*a pseudo-classe abaixo fará com que o link mude de cor após visitado*/
+a:visited {
+    color: black;
+}
+
+/*a pseudo-classe abaixo fará com que o link mude de cor quando o mouse passa por cima, ela precisa vir após a regra de visita por causa da ordem*/
+a:hover {
+    color: brown;
+}
+
+/*a pseudo-classe abaixo fará com que o link mude de cor quando clicado*/
+a:active {
+    color: brown;
+}
+
+.address {
+    margin-bottom: 5px;
+}

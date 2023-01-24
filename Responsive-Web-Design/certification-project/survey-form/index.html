@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOO Yourself - Pesquisa de Satisfação</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <h1 id="title">BOO Yourself - Pesquisa de Satisfação</h1>
+            <p id="description">Obrigado por nos ajudar a melhorar nosso serviço!</p>
+        </header>
+        <form action="#" method="post" id="survey-form">
+            <div>
+                <label for="name" id="name-label">Nome<input type="text" id="name" placeholder="Insira o seu nome" required></label>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email<input type="email" name="" id="email" placeholder="Insira o seu email" required></label>
+            </div>
+            <div>
+                <label for="number" id="number-label">Idade (opcional)<input type="number" name="" id="number" min=10 max=120 placeholder="Idade" required></label>
+            </div>
+            <div>
+                <p>Em uma escala de péssimo a incrível, como você descreveria nosso atendimento?</p>
+                    <select name="" id="dropdown">
+                        <option value="">Escolha uma opção</option>
+                        <option value="1">Péssimo</option>
+                        <option value="2">Ruim</option>
+                        <option value="3">Ok</option>
+                        <option value="4">Bom</option>
+                        <option value="5">Incrível</option>
+                    </select>
+            </div>  
+            <div>
+                <p>Você recomendaria a BOO Yourself para um amigo?</p>
+                <label for="definitivamente"><input type="radio" name="recomend-question" id="definitivamente" class="inline" value="1">Definitivamente</label>
+                <label for="talvez"><input type="radio" name="recomend-question" id="talvez" class="inline" value="2">Talvez</label>
+                <label for="incerteza"><input type="radio" name="recomend-question" id="incerteza" class="inline" value="3">Não tenho certeza</label>
+            </div>
+            <div>
+                <p>Qual você acredita ser o nosso ponto forte?</p>
+                    <select name="" id="strenght">
+                        <option value="">Escolha uma opção</option>
+                        <option value="1">Atendimento</option>
+                        <option value="2">Qualidade dos produtos</option>
+                        <option value="3">Velocidade de preparo</option>
+                        <option value="4">Artes e desenhos</option>
+                    </select>
+            </div> 
+            <div>
+                <p>O que você gostaria que fosse melhorado? <span> (Marque tudo que se aplique)</span></p>
+                <label for="atendimento"><input type="checkbox" id="atendimento" value="1" class="inline">Atendimento</label>
+                <label for="qualidade"><input type="checkbox" id="qualidade" value="2" class="inline">Qualidade dos produtos</label>
+                <label for="velocidade"><input type="checkbox" id="velocidade" value="3" class="inline">Velocidade de preparo</label>
+                <label for="artes"><input type="checkbox" id="artes" value="4" class="inline">Artes e desenhos</label>
+            </div>
+            <div>
+                <p>Algum comentário ou sugestão?</p>
+                <textarea name="" id="sugestion" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="submit" name="" id="submit">
+            </div>  
+        </form>
+    </body>
+</html>

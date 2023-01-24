@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <h1>Registration Form</h1>
+        <p>Please fill out this form with the required information</p>
+        <!--o elemento form serve para a criação de formulários
+            o atributo action define onde serão processados os dados do form
+            o atributo method define como serão enviados os dados do form
+            em forms é útil de boa prática fornecer a cada elemento submissível um nome,
+            esse atríbuto é usado para idenficar o elemento no form de submissão-->
+        <form action="https://register-demo.freecodecamp.org" method="post">
+            <!--cada fieldset servirá para um campo do forms
+                o primeiro guardará os campos de nome, email e senha-->
+            <fieldset>
+                <label for="first-name">Enter Your First Name: <input type="text" name="" id="first-name" required></label>
+                <label for="last-name">Enter Your Last Name: <input type="text" name="" id="last-name" required></label>
+                <label for="email">Enter Your Email: <input type="email" name="" id="email" required></label>
+                <!--No tipo password é possível utilizar o atributo pattern para definir uma expressão regular para validar a password
+                    A expressão utilizada corresponde a oito ou mais letras minúsculas ou os dígitos de 0 a 5-->
+                <label for="new-password">Create a New Password: <input type="password" name="" id="new-password" pattern="[a-z0-5]{8,}"required></label>
+            </fieldset>
+            <fieldset>
+                <!--o atributo for da label deve possuir o mesmo valor do id do input-->
+                <label for="personal-account"><input type="radio" name="account-type" id="personal-account" class="inline"> Personal Account</label>
+                <label for="business-account"><input type="radio" name="account-type" id="business-account" class="inline"> Business Account</label>
+                <label for="terms-and-conditions"><input type="checkbox" name="terms" id="terms-and-conditions" required class="inline"> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+            </fieldset>
+            <fieldset>
+                <label for="profile-picture">Upload a profile picture: <input type="file" name="file-pic" id="profile-picture"></label>
+                <!--os atributos min e max definem o range do input number-->
+                <label for="age">Input your age (years): <input type="number" name="age-value" id="age" min="13" max="120"></label>
+                <label for="referrer">How did you hear about us?
+                    <select name="ask-how" id="referrer">
+                        <option value="">(select one)</option>
+                        <option value="1">freeCodeCamp News</option>
+                        <option value="2">freeCodeCamp YouTube Channel</option>
+                        <option value="3">freeCodeCamp Forum</option>
+                        <option value="4">Other</option>
+                    </select>
+                </label>
+                <label for="bio">Provide a bio:
+                    <textarea name="bio-field" id="bio" cols="30" rows="3" placeholder="I like coding on the beach..."></textarea>
+                </label>
+                
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

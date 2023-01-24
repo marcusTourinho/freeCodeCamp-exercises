@@ -1,0 +1,65 @@
+body {
+    /*vh é com base no tamanho da viewport*/
+    height: 100vh;
+    margin: 0;
+    font-family: 'cardo';
+    background-image: url('logo-boo2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: rgb(61, 29, 45);
+}
+
+header {
+    text-align: center;
+    /*em é com base no tamanho da fonte*/
+    margin: 1em auto;
+}
+
+form {
+    font-size: 18px;
+    width: 600px;
+    margin: auto;
+    padding: 2.5em;
+    background-color: rgba(61, 29, 45, 0.9);
+    color: white;
+}
+
+h1, p {
+    margin-bottom: 5px;
+}
+
+span {
+    font-size: 15px;
+}
+
+label {
+    display: block;
+}
+
+input, textarea, select {
+    width: 100%;
+    margin-bottom: 1em;
+    min-height: 2em;
+}
+
+.inline {
+    /*unset reseta a propriedadade do elemento para a de nascença*/
+    width: unset;
+    margin: 0 0.5em 0.5em 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    height: 3em;
+    border: none;
+    background-color: #37af65;
+    color: white;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+
+
+
+ 
