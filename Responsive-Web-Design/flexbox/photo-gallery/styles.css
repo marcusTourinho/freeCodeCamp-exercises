@@ -1,0 +1,71 @@
+/*o seletor "*" seleciona todos os elementos*/
+* {
+    /*a propriedade box-sizing seta como a largura e a altura de um elemento será calculada
+      o valor border-box informa ao navegador para considerar qualquer borda e preechimento
+      nos valores especificados para a largura e a altura de um elemento. Se definir a largura
+      de um elemento para 100px, esses 100px incluirão qualquer borda ou preenchimento adicionado
+      e a caixa de conteúdo enconlherá par absorver essa largura extra.*/
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f5f6f7;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px;
+  background-color: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+}
+
+.gallery {
+  /*Flexbox é um layout de 1 dimensão do CSS que pode controlar 
+    o jeito como os itens são espaçados e alinhados dentro de um container
+    qualquer filho direto de um flex container é chamado de flex item*/
+  display: flex;
+  /*flexbox tem um main axis e um cross axis. O main axis é definido pelo flex-direction, que possui 4 possíveis valores
+    row (default): horizontal axis com flex items da esquerda para direita
+    row-reverse: horizontal axis com flex items da direita para esquerda
+    column: vertical axis com flex items de cima para baixo
+    column-reverse: vertical axis com flex items de baixo para cima
+    os eixos e direções serão diferentes a depender da direção do texto*/
+  flex-direction: row;
+  /*A propriedade abaixo determina como seu flex item se comporta quando o flex container é muito pequeno
+    setando para wrap fará os itens embrulhem para a próxima linha ou coluna. nowrap (default) irá previnir
+    seus items sejam embrulhados e encolham se necessário*/
+  flex-wrap: wrap;
+  /*a propriedade abaixo determina como os itens dentro do flex container são posicionados pelo main axis
+    afetando seus posicionamento e o espaço ao redor deles.*/
+    justify-content: center;
+  /*a propriedade abaixo posiciona o flex content pelo cross axis. Neste caso, com seu flex-direction setado como row
+    seu cross axis seria vertical*/
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    /*a propriedade abaixo define os gaps entre linhas e colunas. ela e suas subpropriedades row-gap e column-gap
+      fornecem essa funcionalidade para os layouts flex, grid e multi-column*/
+    gap: 16px;
+}
+
+.gallery img {
+   width: 100%;
+   max-width: 350px;
+   height: 300px;
+   /*a propriedade abaixo determina em como as imagens devem se comportar em casos de, por exemplo, ficarem distorcidas
+    por terem diferentes proporções*/
+   object-fit: cover;
+   border-radius: 10px;
+}
+
+/*o pseudo elemento abaixo cria um elemento que é o último filho do elemento selecionado. Você pode usá-lo para adicionar
+  um elemento.*/
+.gallery::after {
+  content: "";
+  width: 350px;
+}
