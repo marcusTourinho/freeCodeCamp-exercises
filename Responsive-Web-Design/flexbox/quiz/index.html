@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project">
+    <title>Accessibility Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <header>
+            <img src="fcc-logo.svg" alt="Logo freeCodeCamp na cor branca" id="logo">
+            <h1>HTML/CSS Quiz</h1>
+            <nav>
+                <ul>
+                    <!--a acessibilidade de navegação pode ser melhorada utilizando teclas de atalho
+                     o atributo accesskey aceita uma lista dessas atalhos-->
+                    <li><a href="#student-info" accesskey="i">INFO</a></li>
+                    <li><a href="#html-questions" accesskey="h">HTML</a></li>
+                    <li><a href="#css-questions" accesskey="c">CSS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+                <section role="region" aria-labelledby="student-info">
+                    <h2 id="student-info">Student Info</h2>
+                    <div class="info">
+                        <!--é importante linkar cada input a seu label correspondente. Isso fornece aos usuários
+                         de tecnologia assistiva uma referẽncia visual para a entrada, isso é feito dando ao
+                        atributo for o mesmo valor do id-->
+                        <label for="name">Name:</label>
+                        <!--atributo placeholder é ruim para a acessibilidade pois pode confundir os usuários
+                         fazendo-os achar que o campo já está preenchido-->
+                        <input type="text" name="name-input" id="name">
+                    </div>
+                    <div class="info">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email-input" id="email">
+                    </div>
+                    <div class="info">
+                        <!--DOB não é descritivo o suficiente. Isso é um fato para usuários deficientes visuais
+                         Uma fora de contornar isso, sem adicionar um texto visível a label, é adicionando um texto
+                        que apenas um leitor de tela pode ler-->
+                        <label for="dob">D.O.B.: <span class="sr-only">(Date of Birth)</span></label>
+                        <input type="date" name="dob-input" id="dob">
+                    </div>
+                </section>
+                <section role="region" aria-labelledby="html-questions">
+                    <h2 id="html-questions">HTML</h2>
+                    <div class="question-block">
+                        <p>1</p>
+                        <fieldset class="question" name="question-1">
+                            <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
+                            <ul class="answers-list">
+                                <!--dar um mesmo nome a um input radio faz com que apenas 1 deles seja selecionado-->
+                                <li><label for="q1-a1"><input type="radio" name="q1" id="q1-a1" value="true">True</label></li>
+                                <li><label for="q1-a2"><input type="radio" name="q1" id="q1-a2" value="false">False</label></li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <div class="question-block">
+                        <p>2</p>
+                        <fieldset class="question" name="question-2">
+                            <legend>A label element nesting an input element is required to have a for attribute with the same value as the input's id</legend>
+                            <ul class="answers-list">
+                                <li><label for="q2-a1"><input type="radio" name="q2" id="q2-a1" value="true">True</label></li>
+                                <li><label for="q2-a2"><input type="radio" name="q2" id="q2-a2" value="false">False</label></li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </section>
+                <section role="region" aria-labelledby="css-questions">
+                    <h2 id="css-questions">CSS</h2>
+                    <div class="formrow">
+                        <div class="question-block">
+                            <label for="customer">Are you an frontend developer?</label>
+                        </div>
+                        <div class="answer">
+                            <select name="customer" id="customer" required>
+                                <option value="">Select an option</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <div class="question-block">
+                            <label for="css-question">Do you have any questions:</label>
+                        </div>
+                        <div class="answer">
+                            <textarea name="css-question" id="css-question" cols="24" rows="5" placeholder="Who is flexbox..."></textarea>
+                        </div>
+                    </div>
+                </section>
+                <button type="submit">Send</button>
+            </form>
+        </main>
+        <footer>
+            <address>
+                <a href="https://freecodecamp.org">freeCodeCamp</a><br>
+                San Francisco<br>
+                California<br>
+                USA
+            </address>
+        </footer>
+    </body>
+</html>
