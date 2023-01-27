@@ -52,15 +52,12 @@ li a {
     text-decoration: none;
 }
 
-main {
-    padding-top: 100px;
-}
-
 #home-sec {
     text-align: center;
     width: 100%;
     background-color: antiquewhite;
     color: #1D232A;
+    padding-top: 50px;
 }
 
 #image {
@@ -82,14 +79,18 @@ h3 {
     text-align: center;
     font-size: 2em;
     margin: 0;
-    padding: 1em 0 5px 0;
 }
 
-#tribute-info {
+#tribute-info, #publi-info {
     background-color: #1D232A;
-    padding: 0 0 50px 0;
+    padding: 50px 0;
     width: 90%;
-    margin: auto;
+    margin: 15px auto;
+}
+
+.separator {
+    height: 50px;
+    width: 100%;
 }
 
 .bio-info {
@@ -112,6 +113,7 @@ h3 {
     justify-content:center;
     width: 90%;
     margin: auto;
+    padding-top: 50px;
 }
 
 
