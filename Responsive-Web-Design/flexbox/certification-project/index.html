@@ -12,7 +12,7 @@
             <img src="miltonsantos-assinatura.jpg" alt="" id="logo">
             <nav>
                 <ul id="navegador">
-                    <li><a href="#img-div">Home</a></li>
+                    <li><a href="#home-sec">Home</a></li>
                     <li><a href="#bio-info">Biografia</a></li>
                     <li><a href="#publi-info">Publicações</a></li>
                     <li><a href="#premio-info">Prêmios</a></li>
@@ -20,50 +20,114 @@
             </nav>
         </header>
         <main id="main">
-            <section>
-                <figure id="img-div">
-                    <img src="milton-santos.jpg" alt="Milton Santos sorrindo com um mapa mundi atrás" id="image">
-                </figure>
+            <section id="home-sec">
+                <img src="milton-santos.jpg" alt="Milton Santos sorrindo com um mapa mundi atrás" id="image">
                 <h1 id="title">Milton Santos</h1>
-                    <p>Geógrafo, intelectual, professor e um dos maiores pensadores brasileiros.</p>
+                <p id="descrip">Geógrafo, intelectual, professor e um dos maiores pensadores brasileiros.</p>
             </section>
+            <h2 class="info" id="bio-info">Biografia</h2>
             <section id="tribute-info">
-                <h2 id="bio-info">Biografia:</h2>
-                <div>
-                    <h3>1948-1964</h3>
-                    <p>Até 1964, ano em que deixa o Brasil em razão do golpe militar,  ele conduz paralelamente uma carreira acadêmica e atividades públicas. Jornalista e redator do jornal <i>A Tarde</i> (1954-1964), 
+                <h3>1948-1964</h3>
+                <div class="bio-info">
+                    <p class="texto">Até 1964, ano em que deixa o Brasil em razão do golpe militar,  ele conduz paralelamente uma carreira acadêmica e atividades públicas. Jornalista e redator do jornal <i>A Tarde</i> (1954-1964), 
                         professor de geografia humana na Universidade Católica de Salvador (1956-1960), professor catedrático de geografia humana na Universidade Federal da Bahia onde cria o Laboratório de Geociências, 
                         será diretor da Imprensa Oficial da Bahia (1959-1961), presidente da Fundação Comissão de Planejamento Econômico do Estado da Bahia (1962-1964), e representante da Casa Civil do presidente Janio Quadros na Bahia, 
                         em 1961. Suas pesquisas e publicações da época focalizam as realidades locais, principalmente a capital – a tese de doutorado é intitulada <i>O Centro da Cidade de Salvador</i> – assim como as cidades e a região do Recôncavo.</p>
-                    <img src="ms-jovem.jpg" alt="Foto antiga do Milton Santos com beca de formatura."> 
+                    <img src="ms-jovem.jpg" alt="Foto antiga do Milton Santos com beca de formatura." id="ms-jovem"> 
                 </div>
-                <div>
+                <h3>1964-1977</h3>
+                <div class="bio-info">
                     <img src="ms-adulto.jpg" alt="">
-                    <h3>1964-1977</h3>
-                    <p>Em 1964, começa uma carreira internacional imposta pela situação política no Brasil. Primeiro na França, professor convidado nas universidades de Toulouse, Bordeaux e Paris-Sorbonne, 
+                    <p class="texto">Em 1964, começa uma carreira internacional imposta pela situação política no Brasil. Primeiro na França, professor convidado nas universidades de Toulouse, Bordeaux e Paris-Sorbonne, 
                         e no IEDES (Instituto de Estudos do Desenvolvimento Econômico e Social). De 1971 a 1977, inicia uma carreira verdadeiramente itinerante, ao sabor dos convites: no MIT (Massachusetts Institute of Technology – Boston) como pesquisador; 
                         e como professor convidado nas universidades de Toronto (Canadá), Caracas (Venezuela), Dar-es-Salam (Tanzânia), Columbia University (New York). Esse período  abre uma longa caminhada em direção a teorização em geografia, 
                         com o intenso aproveitamento das ricas bibliotecas das grandes universidades. Primeiro uma ampliação do foco com o livro <i>Les Villes Du Tiers Monde</i>, 1971, onde já aparece o interesse em estudar as peculiaridades da economia urbana dos países então chamados 
                         subdesenvolvidos, caracterizada pelos seus dois circuitos, superior e inferior, e resultando no livro <i>L’Espace Partagé: les deux circuits de l’économie des pays sous-développés</i> publicado em francês em 1975, em inglês e português em 1979.
                     </p>
                 </div>
-                <div>
-                    <h3>1977-2001</h3>
-                    <p class="bio-v">Em 1977, retorna ao Brasil. Passam-se dois anos antes de conseguir voltar a ensinar na universidade brasileira, primeiro na Universidade Federal do Rio de Janeiro, de 1979 a 1983, ano em que ingressa por concurso na Universidade de São Paulo, professor titular de geografia humana até a aposentadoria compulsória, recebendo o título de Professor Emérito da USP em 1997 e continuando a pesquisar, publicar e orientar estudantes até o final de sua vida.Será reintegrado oficialmente à Universidade Federal da Bahia em 1995, da qual tinha sido demitido por “ausência”. Doze universidades brasileiras e sete universidades estrangeiras lhe outorgaram o titulo de Doutor Honoris Causa.</p>
-                    <p class="bio-v">Em 1994, recebe o Prêmio Internacional de Geografia Vautrin Lud. Nesta última fase de seu percurso, publica Por uma Geografia Nova, da crítica da geografia a uma geografia crítica (1978), contribuição à efervescência e ânsia de renovação dessa ciência no Brasil . O espaço é definido como uma instancia social ativa, a noção de formação sócio-espacial introduzida. As pesquisas, as aulas e as publicações resultantes tencionam um esforço epistemológico para dotar a geografia latino-americana de categorias de análise apropriadas.</p>
-                    <p class="bio-v">O estudo do meio técnico-científico-informacional deve permitir entender a organização do espaço no período histórico atual. Técnica, espaço, tempo: globalização e meio técnico-científico informacional (1994), Da totalidade ao lugar (1996), Metamorfose do espaço habitado (1997), são algumas dessas publicações que desembocam na sua obra maior (no seu livro maior?): A Natureza do Espaço (1996), que quer ser “uma teoria geral do espaço humano, uma contribuição da geografia `reconstrução da teoria social”. Enfim, em 2000, publica Por uma outra globalização, do pensamento único à consciência universal.</p>
+                <h3>1977-2001</h3>
+                <div class="bio-info">
+                    <p class="texto">Em 1977, retorna ao Brasil. Passam-se dois anos antes de conseguir voltar a ensinar na universidade brasileira, primeiro na Universidade Federal do Rio de Janeiro, de 1979 a 1983, ano em que ingressa por concurso na Universidade de São Paulo, professor titular de geografia humana até a aposentadoria compulsória, recebendo o título de Professor Emérito da USP em 1997 e continuando a pesquisar, publicar e orientar estudantes até o final de sua vida.Será reintegrado oficialmente à Universidade Federal da Bahia em 1995, da qual tinha sido demitido por “ausência”. Doze universidades brasileiras e sete universidades estrangeiras lhe outorgaram o titulo de Doutor Honoris Causa.<br>
+                    <br>
+                    Em 1994, recebe o Prêmio Internacional de Geografia Vautrin Lud. Nesta última fase de seu percurso, publica Por uma Geografia Nova, da crítica da geografia a uma geografia crítica (1978), contribuição à efervescência e ânsia de renovação dessa ciência no Brasil . O espaço é definido como uma instancia social ativa, a noção de formação sócio-espacial introduzida. As pesquisas, as aulas e as publicações resultantes tencionam um esforço epistemológico para dotar a geografia latino-americana de categorias de análise apropriadas.<br>
+                    <br>
+                    O estudo do meio técnico-científico-informacional deve permitir entender a organização do espaço no período histórico atual. Técnica, espaço, tempo: globalização e meio técnico-científico informacional (1994), Da totalidade ao lugar (1996), Metamorfose do espaço habitado (1997), são algumas dessas publicações que desembocam na sua obra maior (no seu livro maior?): A Natureza do Espaço (1996), que quer ser “uma teoria geral do espaço humano, uma contribuição da geografia `reconstrução da teoria social”. Enfim, em 2000, publica Por uma outra globalização, do pensamento único à consciência universal.</p>
                     <img src="ms-sorrindo.jpg" alt="">
                 </div>
             </section>
-            <section>
-                <h2 id="publi-info">Publicações</h2>
+            <h2 class="info" id="publi-info">Publicações</h2>
+            <section class="publi-title">
+                <ul class="title-1">
+                    <li>O povoamento da Bahia: suas causas econômicas, Imprensa Oficial da Bahia</li>
+                    <li>Estudos sobre geografia, Tipografia Manú</li>
+                    <li>Os estudos regionais e o futuro da geografia, Imprensa Oficial da Bahia</li>
+                    <li>Zona do cacau. Introdução ao estudo geográfico, 1ª edição, Imprensa Oficial da Bahia, Artes Gráficas</li>
+                    <li>Estudos de Geografia da Bahia, (em colaboração com J. Tricart e outros)</li>
+                    <li>Localização Industrial, em colaboração com D. Jacobina, Estudos e Problemas da Bahia</li>
+                    <li>A cidade como centro de região. Universidade Federal da Bahia - Laboratório de Geomorfologia e Estudos Regionais</li>
+                    <li>A rede urbana do Recôncavo', Universidade Federal da Bahia - Laboratório de Geomorfologia e Estudos Regionais</li>
+                    <li>O centro da cidade do Salvador, Universidade Federal da Bahia-Editora Progresso Editora</li>
+                    <li>Marianne em Preto e Branco (viagens)</li>
+                    <li>A cidade nos países subdesenvolvidos</li>
+                    <li>Croissance démographique et consommation alimentaire dans les pays sous-développés, I. Les données de base (320 p.); II. Milieux géographiques et alimentation (341 p.)</li>
+                    <li>Aspects de la géographie et de l’économie urbaine des pays sous-développés, 2 fasc</li>
+                    <li>Dix essais sur les villes des pays-sous-développés</li>
+                    <li>Le métier du géographe en pays sous-développés</li>
+                    <li>Les villes du Tiers Monde, Ed. Génin, Librairies Techniques, Géographie Economique et Sociale</li>
+                    <li>Geografia y economia urbanas en los países subdesarrolados</li>
+                    <li>Underdevelopment and poverty: a geographer’s view, The Latin American in Residence Lectures</li>
+                    <li>L’espace partagé</li>
+                    <li>Por uma geografia nova</li>
+                    <li>O trabalho do geógrafo no Terceiro Mundo</li>
+                    <li>A pobreza urbana, Coleção Estudos Urbanos</li>
+                    <li>O espaço dividido</li>
+                    <li>Economia espacial: críticas e alternativas</li>
+                </ul>
+                <ul class="title-1">
+                    <li>The shared space: the two circuits of the urban economy and its spatial repercussions</li>
+                    <li>Espaço e sociedade</li>
+                    <li>A urbanização desigual</li>
+                    <li>Manual de geografia urbana</li>
+                    <li>Pensando o espaço do homem</li>
+                    <li>Ensaios sobre a urbanização latino-americana</li>
+                    <li>Pour une géographie nouvelle</li>
+                    <li>Espaço e Método</li>
+                    <li>Espacio y Metodo</li>
+                    <li>O Espaço do Cidadão</li>
+                    <li>Metamorfoses do Espaço Habitado</li>
+                    <li>Por una geografia nueva, Espasa-Calpe</li>
+                    <li>Metrópole corporativa fragmentada: o caso de São Paulo</li>
+                    <li>Espace et Méthode</li>
+                    <li>Técnica, Espaço, Tempo: Globalização e meio técnico-científico informacional</li>
+                    <li>De la Totalidad al Lugar</li>
+                    <li>Metamorfosis del Espacio Habitado</li>
+                    <li>A Natureza do Espaço. Técnica e Tempo. Razão e Emoção.</li>
+                    <li>La Nature de l’Espace. Technique et Temp. Raison et Émotion.</li>
+                    <li>La Naturaleza del Espacio. Técnica y Tiempo. Razón y Emoción.</li>
+                    <li>Por uma outra globalização. Do pensamento único à consciência universal.</li>
+                    <li>Território e Sociedade. Entrevista com Milton Santos. Entrevistado por Odette Seabra, Mônica de Carvalho, José Corrêa Leite.</li>
+                    <li>O Ensino Superior Público e Particular e o Território Brasileiro (em colaboração com Maria Laura Silveira)</li>
+                    <li>O Brasil: território e sociedade no início do século XXI (em colaboração com Maria Laura Silveira)</li>
+                    <li>O País distorcido: o Brasil, a globalização e a cidadania (organização, apresentação e notas de Wagner Costa Ribeiro e ensaio de Carlos Walter Porto Gonçalves)</li>
+                </ul>
             </section>
-            <section>
-                <h2 id="premio-info">Prêmios</h2>
+            <h2 class="info" id="premio-info">Prêmios</h2>
+            <section class="premio-title">
+                <ul>
+                    <li>Prêmio Internacional de Geografia Vautrin Lud</li>
+                    <li>Prêmio Anísio Teixeira</li>
+                    <li>Mérito Tecnológico, Sindicato dos Engenheiros do Estado de São Paulo</li>
+                    <li>Personalidade do Ano, Instituto dos Arquitetos do Brasil</li>
+                    <li>Prêmio Jabuti de Literatura, 1997 - Prêmio pelo melhor livro das Ciências Humanas por A Natureza do Espaço - Técnica e Tempo, Razão e Emoção</li>
+                    <li>Comendador da Ordem Nacional do Mérito Científico</li>
+                    <li>Emérito da Faculdade de Filosofia, Letras e Ciências Humanas da Universidade de São Paulo</li>
+                    <li>Homem de Ideias 1998, homenagem do Jornal do Brasil a Milton Santos</li>
+                    <li>Contemplado em concurso nacional da Revista Isto É como um dos 20 "Cientistas do Século", conforme encarte Especial nº 7</li>
+                </ul>
             </section>
         </main>
     </body>
     <footer>
-        <h3>Todas as informações foram retiradas do site <a href="http://miltonsantos.com.br/site/" id="tribute-link" target="_blank">Milton Santos</a>.</h3>
+        <p>Todas as informações foram retiradas do site <a href="http://miltonsantos.com.br/site/" id="tribute-link" target="_blank">Milton Santos</a>.</p>
     </footer>
 </html>
