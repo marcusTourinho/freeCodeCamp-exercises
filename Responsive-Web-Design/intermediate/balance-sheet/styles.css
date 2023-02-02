@@ -1,0 +1,174 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #0a0a23;
+}
+
+
+/*você pode utilizar o CSS para fazer elementos completamente escondidos do visual da página
+ mas ainda sendo lidos pelos leitores de tela. O CSS abaixo é um conjunto de propriedades
+ utilizados para garantir que os elementos são completamente escondidos visualmente.
+ o seletor abaixo seleciona qualquer elemento span incluindo o sr-only*/
+span[class~="sr-only"] {
+    /*a palavra-chave "!important" garante que as propriedades serão aplicadas sempre,
+     independente da ordem ou especificidade*/
+    border: 0 !important;
+    /*a propriedade clip é utilizada para definir as porções visíveis de um elemento
+     a propriedade clip-path determina a forma que a propriedade clip deve ter*/
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    -webkit-clip-path: inset(50%) !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    position: absolute !important;
+    padding: 0 !important;
+    margin: -1px !important;
+}
+
+h1 {
+    max-width: 37.25rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem;
+}
+
+h1 .flex {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+
+h1 .flex span:first-of-type {
+    font-size: 0.7em;
+}
+
+h1 .flex span:last-of-type {
+    font-size: 1.2em;
+}
+
+section {
+    max-width: 40rem;
+    margin: 0 auto;
+    border: 2px solid #d0d0d5;
+}
+
+#years {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    color: #fff;
+    background-color: #0a0a23;
+    z-index: 999;
+    margin: 0 -2px;
+    /*a função calc() te permite calcular um valor com base em outros valores*/
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+}
+
+
+/*a sinxtaxe span[class] mira em qualquer elemento span que possui um atributo class
+ setado, independente do valor do atributo*/
+#years span[class] {
+    text-align: right;
+    font-weight: bold;
+    width: 4.5rem;
+}
+
+.table-wrap {
+    padding: 0 0.75rem 1.5rem 0.75rem;
+}
+
+/*a sintaxe :not(.sr-only) seleciona os elementos que não possuem a classe
+ ela foi retirada após apĺicar a palavra-chave no anterior*/
+
+table {
+    /*a propriedade abaixo permite que as bordas das células sejam reduzidas
+     em uma única borda ao redor de cada célula*/
+    border-collapse: collapse;
+    border: 0;
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+}
+
+table caption {
+    color: #356eaf;
+    font-size: 1.3em;
+    font-weight: normal;
+    position: absolute;
+    top: -2.25rem;
+    left: 0.5rem;
+}
+
+tbody td {
+    width: 100vw;
+    max-width: 4rem;
+    min-width: 4rem;
+}
+
+tbody th {
+    width: calc(100% - 12rem);
+}
+/*o seletor abaixo mira em qualquer elemento que tenha um atributo com um valor específico*/
+tr[class="total"] {
+    border-bottom: 4px double #0a0a23;
+    font-weight: bold;
+}
+
+tr[class="total"] th{
+    text-align: left;
+    padding: 0.5rem 0 0.25rem 0.5rem;
+}
+/*a principal diferença entre tr[class="total"] e tr.total é que o primeiro selecionará elementos
+ tr onde a única classe é total, e o segundo selecionará os elementos tr onde a classe inclui total*/
+tr.total td {
+    text-align: right;
+    padding: 0 0.25rem;
+}
+/*esse pseudo seletor é usado para atingir elementos especificos baseado em sua ordem dentre os irmãos
+ de um mesmo tipo*/
+tr.total td:nth-of-type(3) {
+    padding-right: 0.5rem;
+}
+
+tr.total:hover {
+    background-color: #99c9ff;
+}
+
+td[class="current"] {
+    font-style: italic;
+}
+
+tr[class="data"] {
+    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+
+/*abaixo serão selecionados todos os elementos th que estão dentre os elementos tr.data*/
+tr.data th {
+    text-align: left;
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+}
+/*o seletor abaixo seleciona todos os elementos com a classe description dentre os elementos
+ th em seu tr.data*/
+tr.data th .description {
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+    padding: 1rem 0 0.75rem;
+    margin-right: -13.5rem;
+}
+
+tr.data td {
+    vertical-align: top;
+    text-align: right;
+    padding: 0.3rem 0.25rem 0;
+}
+
+tr.data td:last-of-type {
+padding-right: 0.5rem;
+}
